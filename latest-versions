@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+echo 'ffc-ffd-landing-page' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-ffd-landing-page/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-ffd-auth' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-ffd-auth/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-ffd-business' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-ffd-business/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-ffd-proxy' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-ffd-proxy/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'

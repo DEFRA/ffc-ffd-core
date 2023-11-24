@@ -1,0 +1,43 @@
+#!/usr/bin/env sh
+set -e
+projectRoot="$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; pwd)"
+
+show_help() {
+  echo "
+    Usage: path/to/ffc-ffd-core [OPTION...]
+    Update services.
+
+    Options:
+      -h, --help       display this help text
+    "
+}
+
+while :; do
+  case $1 in
+    -h|--help)   # Call a "show_help" function to display a synopsis, then exit.
+      show_help
+      exit
+      ;;
+    *)
+      break
+  esac
+
+  shift
+done
+
+cd "${projectRoot}"
+cd ./ffc-ffd-landing-page && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-ffd-auth && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-ffd-business && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-ffd-proxy && \
+  git checkout main && \
+  git pull

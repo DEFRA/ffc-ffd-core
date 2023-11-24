@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+# Clone repositories managed by this project
+set -e
+projectRoot=$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; pwd)
+
+(
+  cd "${projectRoot}"
+
+  printf "\nCloning repositories\n"
+
+  test -d ffc-ffd-landing-page\
+    && >&2 echo "The 'ffc-ffd-landing-page' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-ffd-landing-page.git
+  test -d ffc-ffd-auth\
+    && >&2 echo "The 'ffc-ffd-auth' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-ffd-auth.git
+  test -d ffc-ffd-business\
+    && >&2 echo "The 'ffc-ffd-business' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-ffd-business.git
+  test -d ffc-ffd-proxy\
+    && >&2 echo "The 'ffc-ffd-proxy' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-ffd-proxy.git
+)

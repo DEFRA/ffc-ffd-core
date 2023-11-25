@@ -33,7 +33,7 @@ done
 
 cd "${projectRoot}"
 
-./ffc-ffd-landing-page/scripts/start -d;
 ./ffc-ffd-auth/scripts/start -d;
+./ffc-ffd-landing-page/scripts/start -d;
 ./ffc-ffd-business/scripts/start -d;
 ./ffc-ffd-proxy/scripts/start -d;

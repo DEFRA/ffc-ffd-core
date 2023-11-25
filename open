@@ -31,3 +31,4 @@ code ./ffc-ffd-landing-page;
 code ./ffc-ffd-auth;
 code ./ffc-ffd-business;
 code ./ffc-ffd-proxy;
+code ./ffc-ffd-ingress;

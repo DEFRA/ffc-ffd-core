@@ -37,3 +37,6 @@ cd ./ffc-ffd-business && \
 cd "${projectRoot}"
 cd ./ffc-ffd-proxy && \
   git pull
+cd "${projectRoot}"
+cd ./ffc-ffd-ingress && \
+  git pull

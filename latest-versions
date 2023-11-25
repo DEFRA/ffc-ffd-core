@@ -11,3 +11,6 @@ echo 'ffc-ffd-business' &&
 
 echo 'ffc-ffd-proxy' &&
   curl --silent "https://api.github.com/repos/defra/ffc-ffd-proxy/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-ffd-ingress' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-ffd-ingress/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'

@@ -37,3 +37,6 @@ cd ./ffc-ffd-business && \
 cd "${projectRoot}"
 cd ./ffc-ffd-proxy && \
   docker-compose build
+cd "${projectRoot}"
+cd ./ffc-ffd-ahwr-stub && \
+  docker-compose build

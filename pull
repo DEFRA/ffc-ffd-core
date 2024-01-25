@@ -41,5 +41,8 @@ cd "${projectRoot}"
 cd ./ffc-ffd-ingress && \
   git pull
 cd "${projectRoot}"
+cd ./ffc-ffd-data && \
+  git pull
+cd "${projectRoot}"
 cd ./ffc-ffd-ahwr-stub && \
   git pull

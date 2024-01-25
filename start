@@ -37,4 +37,5 @@ cd "${projectRoot}"
 ./ffc-ffd-auth/scripts/start -d;
 ./ffc-ffd-business/scripts/start -d;
 ./ffc-ffd-proxy/scripts/start -d;
+./ffc-ffd-data/scripts/start -d;
 ./ffc-ffd-ahwr-stub/scripts/start -d;

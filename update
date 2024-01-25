@@ -46,6 +46,10 @@ cd ./ffc-ffd-ingress && \
   git checkout main && \
   git pull
 cd "${projectRoot}"
+cd ./ffc-ffd-data && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
 cd ./ffc-ffd-ahwr-stub && \
   git checkout main && \
   git pull

@@ -32,4 +32,5 @@ code ./ffc-ffd-auth;
 code ./ffc-ffd-business;
 code ./ffc-ffd-proxy;
 code ./ffc-ffd-ingress;
+code ./ffc-ffd-data;
 code ./ffc-ffd-ahwr-stub;
